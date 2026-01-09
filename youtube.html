@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/logo1.webp">
+  <title>YouTube Clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Top Navbar -->
+  <nav class="navbar d-flex align-items-center justify-content-between sticky-top">
+    <!-- Left -->
+    <div class="d-flex align-items-center">
+      <i class="bi bi-list fs-4 me-3"></i>
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/logo.webp" alt="YouTube Logo" class="me-1 img-fluid">
+      </a>
+    </div>
+
+    <!-- Center -->
+    <div class="d-flex align-items-center search-bar">
+      <input type="text" class="form-control search-input" placeholder="Search">
+      <button class="btn search-btn"><i class="bi bi-search"></i></button>
+      <div class="mic-btn">
+        <i class="bi bi-mic-fill"></i>
+      </div>
+    </div>
+
+    <!-- Right -->
+    <div class="d-flex align-items-center gap-3">
+      <button class="btn btn-light rounded-pill px-3"><i class="bi bi-plus-lg"></i> Create</button>
+      <div class="notification">
+        <i class="bi bi-bell fs-4"></i>
+        <div class="notification-badge">3</div>
+      </div>
+      <img src="https://i.pravatar.cc/40" alt="Profile" class="profile-img">
+    </div>
+  </nav>
+
+  <!-- Sidebar -->
+  <div class="sidebar d-none d-md-block mt-2">
+    <a href="youtube.html"><i class="bi bi-house-door-fill"></i> Home</a>
+    <a href="shorts.html"><i class="bi bi-lightning-charge"></i> Shorts</a>
+    <a href="subscription.html"><i class="bi bi-collection-play"></i> Subscriptions <span
+        class="text-primary">•</span></a>
+
+    <hr>
+
+    <div class="section-title">You <i class="bi bi-chevron-right"></i></div>
+    <a href="history.html"><i class="bi bi-clock-history"></i> History</a>
+    <a href="#"><i class="bi bi-list-ul"></i> Playlists</a>
+    <a href="#"><i class="bi bi-play-btn"></i> Your videos</a>
+    <a href="#"><i class="bi bi-mortarboard"></i> Your courses</a>
+    <a href="#"><i class="bi bi-clock"></i> Watch later</a>
+    <a href="likes.html"><i class="bi bi-hand-thumbs-up"></i> Liked videos</a>
+    <a href="#"><i class="bi bi-download"></i> Downloads</a>
+
+    <hr>
+
+    <div class="section-title">Subscriptions <i class="bi bi-chevron-right"></i></div>
+    <a href="#">
+      <img src="https://yt3.ggpht.com/ytc/AKedOLQqGQy7H_sjKz6aQ6XJ9JDAvEoXk8kSf9Tw=s88-c-k-c0x00ffffff-no-rj"
+        class="subscription-img"> ABP NEWS <span class="live-dot">🔴</span>
+    </a>
+    <a href="#"><img src="https://i.pravatar.cc/40?img=12" class="subscription-img"> Aabid Khan</a>
+    <a href="#"><img src="https://i.pravatar.cc/40?img=13" class="subscription-img"> Abhinav Singh</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content ">
+    <!-- Category Navbar -->
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">All</a>
+            <a class="nav-link" href="#">Music</a>
+            <a class="nav-link" href="#">Mixes</a>
+            <a class="nav-link" href="#">T-Series</a>
+            <a class="nav-link" href="#">Harshvardhan Rane</a>
+            <a class="nav-link" href="#">Tamil Cinema</a>
+            <a class="nav-link" href="#">Yo Yo Honey Singh</a>
+            <a class="nav-link" href="#">Trailers</a>
+            <a class="nav-link" href="#">Arijit Singh</a>
+            <a class="nav-link" href="#">APIs</a>
+            <a class="nav-link" href="#">Indian Pop Music</a>
+            <a class="nav-link" href="#">Music</a>
+            <a class="nav-link" href="#">Mixes</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Content of body-->
+    <div class="row">
+      <div class="col-sm-11 mx-auto">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+          <div class="col">
+            <div class="card border border-0">
+              <iframe class="w-100 rounded-4" height="200"
+                src="https://www.youtube.com/embed/fXkh3VufNe8?si=M_DM8_FA7izE4Q8E" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-title fw-bold">DIL DIL DIL - Ek Deewane Ki Deewaniyat </p>
+                <p class="card-text">Divya Kumar, Kunaal Vermaa, Neeti Mohan, and more
+                  Updated today.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card border border-0">
+              <iframe class="w-100 rounded-4" height="200"
+                src="https://www.youtube.com/embed/Qo4IOTAbGAM?si=LP15jRZ5TbUWmFGR" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-title fw-bold">DEEWANIYAT Title Track </p>
+                <p class="card-text"> Ek Deewane Ki Deewaniyat | Harshvardhan Sonam | Vishal ,KaushikGuddu,Kunaal</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card border border-0">
+              <iframe class="w-100 rounded-4" height="200"
+                src="https://www.youtube.com/embed/nYLkyW2dDXU?si=RXRpjUvG4xYZ7oiw" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-title fw-bold">Bijuria</p>
+                <p class="card-text">Sunny Sanskari Ki Tulsi Kumari | Varun, Janhvi,Sanya, Rohit | Sonu, Tanishk, Ravi,
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card border border-0">
+              <iframe class="w-100 rounded-4" height="200"
+                src="https://www.youtube.com/embed/r_lxE7kF0Fo?si=Mnil6Tbddo88m5Zh" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-title fw-bold">Bol Kaffara Kya Hoga</p>
+                <p class="card-text">Sunny Sanskari Ki Tulsi Kumari | Varun, Janhvi,Sanya, Rohit | Sonu, Tanishk, Ravi,
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="card border border-0">
+              <iframe class="w-100 rounded-4" height="200"
+                src="https://www.youtube.com/embed/fXkh3VufNe8?si=M_DM8_FA7izE4Q8E" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-title fw-bold">DIL DIL DIL - Ek Deewane Ki Deewaniyat </p>
+                <p class="card-text">Divya Kumar, Kunaal Vermaa, Neeti Mohan, and more
+                  Updated today.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card border border-0">
+              <iframe class="w-100 rounded-4" height="200"
+                src="https://www.youtube.com/embed/Qo4IOTAbGAM?si=LP15jRZ5TbUWmFGR" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-title fw-bold">DEEWANIYAT Title Track </p>
+                <p class="card-text"> Ek Deewane Ki Deewaniyat | Harshvardhan Sonam | Vishal ,KaushikGuddu,Kunaal</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card border border-0">
+              <iframe class="w-100 rounded-4" height="200"
+                src="https://www.youtube.com/embed/nYLkyW2dDXU?si=RXRpjUvG4xYZ7oiw" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-title fw-bold">Bijuria</p>
+                <p class="card-text">Sunny Sanskari Ki Tulsi Kumari | Varun, Janhvi,Sanya, Rohit | Sonu, Tanishk, Ravi,
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card border border-0">
+              <iframe class="w-100 rounded-4" height="200"
+                src="https://www.youtube.com/embed/r_lxE7kF0Fo?si=Mnil6Tbddo88m5Zh" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-title fw-bold">Bol Kaffara Kya Hoga</p>
+                <p class="card-text">Sunny Sanskari Ki Tulsi Kumari | Varun, Janhvi,Sanya, Rohit | Sonu, Tanishk, Ravi,
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="card border border-0">
+              <iframe class="w-100 rounded-4" height="200"
+                src="https://www.youtube.com/embed/fXkh3VufNe8?si=M_DM8_FA7izE4Q8E" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-title fw-bold">DIL DIL DIL - Ek Deewane Ki Deewaniyat </p>
+                <p class="card-text">Divya Kumar, Kunaal Vermaa, Neeti Mohan, and more
+                  Updated today.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card border border-0">
+              <iframe class="w-100 rounded-4" height="200"
+                src="https://www.youtube.com/embed/Qo4IOTAbGAM?si=LP15jRZ5TbUWmFGR" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-title fw-bold">DEEWANIYAT Title Track </p>
+                <p class="card-text"> Ek Deewane Ki Deewaniyat | Harshvardhan Sonam | Vishal ,KaushikGuddu,Kunaal</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card border border-0">
+              <iframe class="w-100 rounded-4" height="200"
+                src="https://www.youtube.com/embed/nYLkyW2dDXU?si=RXRpjUvG4xYZ7oiw" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-title fw-bold">Bijuria</p>
+                <p class="card-text">Sunny Sanskari Ki Tulsi Kumari | Varun, Janhvi,Sanya, Rohit | Sonu, Tanishk, Ravi,
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card border border-0">
+              <iframe class="w-100 rounded-4" height="200"
+                src="https://www.youtube.com/embed/r_lxE7kF0Fo?si=Mnil6Tbddo88m5Zh" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-title fw-bold">Bol Kaffara Kya Hoga</p>
+                <p class="card-text">Sunny Sanskari Ki Tulsi Kumari | Varun, Janhvi,Sanya, Rohit | Sonu, Tanishk, Ravi,
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="card border border-0">
+              <iframe class="w-100 rounded-4" height="200"
+                src="https://www.youtube.com/embed/fXkh3VufNe8?si=M_DM8_FA7izE4Q8E" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-title fw-bold">DIL DIL DIL - Ek Deewane Ki Deewaniyat </p>
+                <p class="card-text">Divya Kumar, Kunaal Vermaa, Neeti Mohan, and more
+                  Updated today.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card border border-0">
+              <iframe class="w-100 rounded-4" height="200"
+                src="https://www.youtube.com/embed/Qo4IOTAbGAM?si=LP15jRZ5TbUWmFGR" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-title fw-bold">DEEWANIYAT Title Track </p>
+                <p class="card-text"> Ek Deewane Ki Deewaniyat | Harshvardhan Sonam | Vishal ,KaushikGuddu,Kunaal</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card border border-0">
+              <iframe class="w-100 rounded-4" height="200"
+                src="https://www.youtube.com/embed/nYLkyW2dDXU?si=RXRpjUvG4xYZ7oiw" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-title fw-bold">Bijuria</p>
+                <p class="card-text">Sunny Sanskari Ki Tulsi Kumari | Varun, Janhvi,Sanya, Rohit | Sonu, Tanishk, Ravi,
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card border border-0">
+              <iframe class="w-100 rounded-4" height="200"
+                src="https://www.youtube.com/embed/r_lxE7kF0Fo?si=Mnil6Tbddo88m5Zh" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-title fw-bold">Bol Kaffara Kya Hoga</p>
+                <p class="card-text">Sunny Sanskari Ki Tulsi Kumari | Varun, Janhvi,Sanya, Rohit | Sonu, Tanishk, Ravi,
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="card border border-0">
+              <iframe class="w-100 rounded-4" height="200"
+                src="https://www.youtube.com/embed/fXkh3VufNe8?si=M_DM8_FA7izE4Q8E" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-title fw-bold">DIL DIL DIL - Ek Deewane Ki Deewaniyat </p>
+                <p class="card-text">Divya Kumar, Kunaal Vermaa, Neeti Mohan, and more
+                  Updated today.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card border border-0">
+              <iframe class="w-100 rounded-4" height="200"
+                src="https://www.youtube.com/embed/Qo4IOTAbGAM?si=LP15jRZ5TbUWmFGR" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-title fw-bold">DEEWANIYAT Title Track </p>
+                <p class="card-text"> Ek Deewane Ki Deewaniyat | Harshvardhan Sonam | Vishal ,KaushikGuddu,Kunaal</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card border border-0">
+              <iframe class="w-100 rounded-4" height="200"
+                src="https://www.youtube.com/embed/nYLkyW2dDXU?si=RXRpjUvG4xYZ7oiw" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-title fw-bold">Bijuria</p>
+                <p class="card-text">Sunny Sanskari Ki Tulsi Kumari | Varun, Janhvi,Sanya, Rohit | Sonu, Tanishk, Ravi,
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card border border-0">
+              <iframe class="w-100 rounded-4" height="200"
+                src="https://www.youtube.com/embed/r_lxE7kF0Fo?si=Mnil6Tbddo88m5Zh" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-title fw-bold">Bol Kaffara Kya Hoga</p>
+                <p class="card-text">Sunny Sanskari Ki Tulsi Kumari | Varun, Janhvi,Sanya, Rohit | Sonu, Tanishk, Ravi,
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="card border border-0">
+              <iframe class="w-100 rounded-4" height="200"
+                src="https://www.youtube.com/embed/fXkh3VufNe8?si=M_DM8_FA7izE4Q8E" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-title fw-bold">DIL DIL DIL - Ek Deewane Ki Deewaniyat </p>
+                <p class="card-text">Divya Kumar, Kunaal Vermaa, Neeti Mohan, and more
+                  Updated today.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card border border-0">
+              <iframe class="w-100 rounded-4" height="200"
+                src="https://www.youtube.com/embed/Qo4IOTAbGAM?si=LP15jRZ5TbUWmFGR" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-title fw-bold">DEEWANIYAT Title Track </p>
+                <p class="card-text"> Ek Deewane Ki Deewaniyat | Harshvardhan Sonam | Vishal ,KaushikGuddu,Kunaal</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card border border-0">
+              <iframe class="w-100 rounded-4" height="200"
+                src="https://www.youtube.com/embed/nYLkyW2dDXU?si=RXRpjUvG4xYZ7oiw" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-title fw-bold">Bijuria</p>
+                <p class="card-text">Sunny Sanskari Ki Tulsi Kumari | Varun, Janhvi,Sanya, Rohit | Sonu, Tanishk, Ravi,
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card border border-0">
+              <iframe class="w-100 rounded-4" height="200"
+                src="https://www.youtube.com/embed/r_lxE7kF0Fo?si=Mnil6Tbddo88m5Zh" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-title fw-bold">Bol Kaffara Kya Hoga</p>
+                <p class="card-text">Sunny Sanskari Ki Tulsi Kumari | Varun, Janhvi,Sanya, Rohit | Sonu, Tanishk, Ravi,
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--Content of body end-->
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
